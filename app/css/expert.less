@@ -1,0 +1,26 @@
+*{margin: 0;padding: 0}
+a{text-decoration:none;}
+ol,ul,li{list-style: none;}
+img{border:0 none;vertical-align: middle;}
+button{outline: 0 none;border: 0 none;}
+input{outline: none}
+html{font-size:62.5%}
+//设置页面字体大小。@fz 就相当于 1px
+@fz:12rem;
+body{max-width:640/@fz;min-width:320/@fz;margin: 0 auto;background: #ccc;height: 100%;}
+.clearfix{*zoom:1;}
+.clearfix:after{content: ",";display: block;visibility: hidden;clear: both;line-height: 0;font-size: 0;height:0;}
+
+.expertList{height:176/@fz;background: #fff;margin-bottom:20/@fz}
+.expertList_left{float: left;width:35%;
+    .expertList_logo{height:120/@fz;line-height:120/@fz;text-align: center;
+        img{height:90/@fz;width:90/@fz;}
+    }
+}
+.expertList_right{float: right;width:65%;
+    .expertList_compAlia{height:50/@fz;line-height:50/@fz;padding-left:16/@fz;font-size:24/@fz}
+    .expertList_advs{padding: 0 0;
+        li{height:25/@fz;line-height: 25/@fz;font-size:20/@fz;overflow:hidden;text-overflow:ellipsis;white-space: nowrap;}
+    }
+    .expertList_to{height:45/@fz;line-height:45/@fz;font-size:24/@fz}
+}

@@ -1,0 +1,73 @@
+*{margin: 0;padding: 0;}
+html{font-size:62.5%;}
+a{text-decoration:none;color:#33a6ff;}
+ul,ol,li{list-style:none;}
+.clearfix{*zoom:1;}
+.clearfix:after{content: ",";display: block;visibility: hidden;clear: both;line-height: 0;font-size: 0;height:0;}
+img{border: 0 none;vertical-align: middle;}
+body{max-width:64rem;min-width:26rem;margin: 0 auto;background: #ccc;height: 100%;}
+.body{background:#ccc;border-color: #797979;border-style: solid;border-width:0px;font-family: "微软雅黑";margin-top: 5rem}
+.sup_tit,.detailed_tit{background:#fff;height:4rem;line-height:4rem;text-align: center;margin-bottom: 3rem;border-bottom: 1px solid #797979;position: relative;border-top: 1px solid #797979;font-size: 2rem;position: fixed;top: 0;left: 0;width: 100%;z-index: 1000;}
+.sup_tit{margin-bottom: 4rem;}
+.sup_back,.detailed_back{position: absolute;left:1.5rem;top:0;height:4rem;line-height:4rem;font-size:3rem;font-size:2rem;width:5rem;text-align: center}
+.detailed_back:after{position: absolute;width: 1rem;height: 1rem;border-width:0 0 0.2rem  0.2rem;border-color: #000;border-style: solid;content:" ";left:0;top:1.5rem;transform: rotate(45deg);}
+.companyname{width:80%;height:5.5rem;border:1px;display: block;font-size:1.6rem;float: left;}
+.inputnema a{width:10%;height:5.5rem;line-height: 5.5rem;display: block;float: right;font-size:3rem;color: #000}
+.inputnema{background: #fff;border-color: #797979;border-style: solid;border-width:1px 0;}
+.lookupSup{height: 4rem;padding: 3rem 0}
+.lookupBtn{background: #1AAD19 !important ;width:35rem;height:4rem;margin: 0 auto;border-radius: 4px;line-height:4rem;text-align: center;color:#fff !important;border:0 none;cursor: pointer;}
+.companyChoose{height: 2.8rem;border-color: #797979;border-style: solid;border-width:1px 0;padding:0.8rem 0 1rem 1.5rem;background: #fff;}
+.companyChoose li{float: left;}
+.companyChoose .companyID{display: none;}
+.companyChoose .companyIcon{height: 2.8rem;width:2.8rem;}
+.companyChoose .companyUser{width:5rem;height: 2.8rem;line-height:2.8rem;text-align: center;}
+.companyChoose .companyIPGP{height: 2.8rem;width: 10rem;line-height: 2.8rem;margin-left:1.2rem;}
+.companyChoose .companyList{width:8rem;float:right;height: 2.8rem;line-height:2.8rem;text-align: center;cursor: pointer;color: #169bd5;font-size:1rem}
+.companyListNav{height: 4.6rem;border-color: #797979;border-style: solid;border-width:1px 0px;margin-top: 1rem;background: #fff;}
+.companyIcon_img{width:2rem ;display: block;}
+.CLN_compAlia{height: 2.8rem;padding:0.6rem 0 0 1.4rem;}
+.CLN_compAlia_lists{float: left;}
+.CLN_compAlia_img_vip{width:2rem;}
+.CLN_compAlia_img_auth{width: 2.8rem;height: 2.8rem;overflow: hidden;position: relative;}
+.CLN_compAlia_img_auth img{width:5rem;position: absolute;left:-1rem;top:-1rem;}
+.CLN_compAlia_con{color:#000;float: left;width:40%;height:2.8rem;line-height: 2.8rem;}
+.CLN_compAlia_arrow{float: right;width:10%;height:2.8rem;position: relative}
+.CLN_compAlia_arrow:after{position: absolute;width: 1rem;height: 1rem;border-width:0 0 0.2rem  0.2rem;border-color: #000;border-style: solid;content:" ";left:0.5rem;top:0.75rem;transform: rotate(-45deg);}
+.CLN_compAlia_ID{display:none;}
+.detailed_main{background:#ccc;padding-top:1rem;position: absolute;top:4.1rem;bottom: 0;left: 0;right:0;z-index: 10;}
+.deta_header{background: #fff;padding-left: 1.3rem;border-top:1px solid #797979;}
+.detailed_main .found{float: left;font-size: 1.2rem;height: 4.4rem;line-height: 4.4rem;width:15rem;}
+.detailed_main .found span{font-size:1.2rem;padding-left:0.6rem;}
+.detailed_main .chooseAgain{float: right;font-size: 1.2rem;height:1.2rem;line-height: 1.2rem;width:6rem;margin:1.6rem 1.2rem 0 0 ;}
+.detailed_main .dateList{padding-left: 1.4rem;background:#fff;}
+.detailed_main .dateList_li{height:3.2rem;}
+.detailed_main .dateList_li .dateList_li_left{float: left;width:4.4rem;height:3.2rem;line-height:3.2rem;}
+.detailed_main .dateList_li .dateList_li_right{float: left;height:3.2rem;line-height:3.2rem;}
+.detailed_main .seeLOGO{background:#fff;padding-left: 1.4rem;overflow: hidden;border-bottom: 1px solid #797979;padding-bottom:1rem}
+.detailed_main .seeLOGO .seeLOGO_click{height:4.2rem;line-height: 4.2rem;position: relative;}
+.logoimg{position: fixed;width:100%;height:100%;background-color: rgba(0, 0, 0, 0.6);left: 0;top:0;z-index: 11200;right: 0;bottom: 0;text-align: center;}
+.logoimg img{position: absolute;top: 50%;left: 50%;margin:-8rem 0 0 -12.5rem;width:25rem;height: 15rem;}
+.detailed_main .seeLOGO .seeLOGO_ul{display: flex;justify-content: space-around;}
+.detailed_main .seeLOGO .seeLOGO_ul .seeLOGO_li{width:9rem;height:3rem;text-align: center;line-height:3rem;border-radius: 0.6rem;}
+
+/* .seeLOGO_li_1{background: #1AAD19;}
+.seeLOGO_li_2{background: #169bd5;}
+.seeLOGO_li_3{background: #F76260;}
+.seeLOGO_li_4{background: rgb(204, 0, 255);} */
+
+.detailed_main .seeLOGO .seeLOGO_ul .already{color:#000;font-weight:bold;font-size:1.6rem}
+.detailed_main .seeLOGO .seeLOGO_ul .uncertified{color:#333;font-size:1.6rem}
+.detailed_main .threeLabel{height:4rem;background: #fff;margin-top:1rem;padding-top:.5rem;border-width:1px 0;border-color:#797979;border-style:solid;}
+.detailed_main .detailed_main_btn{height: 11rem;line-height:11rem;text-align: center;}
+.detailed_main .detailed_main_btn a{background-color: #1AAD19;width: 100%;cursor: pointer;height:4rem;line-height: 4rem;}
+.page_line{width:100%;height:2rem;border-bottom: 0.1rem solid #000;margin:1rem 0 0}
+.page_line_tit{width: 10rem;height: 3rem;line-height: 3rem;background: #ccc;margin:-1.5rem auto 1rem;font-size:2rem;text-align: center}
+.page_line_txt{line-height: 2rem;color: #f00;font-size: 1.5rem;padding-left: 1rem;}
+
+
+.rela{position: relative;}
+.red{font-size:2rem;height:2rem;line-height: 2rem;color:#f00;position: absolute;top:50%;left:0.5rem;margin-top:-1rem}
+
+.page_prompt{padding-left: 1rem;margin-top:1rem}
+.page_prompt span{color:#f00}
+

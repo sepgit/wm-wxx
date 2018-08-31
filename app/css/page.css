@@ -1,0 +1,42 @@
+body
+{
+  background-color:#CCCCCC;
+}
+.placeholder{margin:5px;padding:0 10px;background-color:#ebebeb;height:2.3em;line-height:2.3em;text-align:center;color:#cfcfcf}
+.page{margin-left:10px;margin-right:10px;}
+.black_panel{background-color:#000000;height:60px;line-height:60px;text-align:center;color:#FFFFFF}
+.green_panel{background-color:#38D561;height:60px;line-height:60px;text-align:center;color:#FFFFFF}
+.blue_panel{background-color:#1476E9;height:60px;line-height:60px;text-align:center;color:#FFFFFF}
+.white_panel{background-color:#FFFFFF;}
+.nocolor_panel{opacity: 0;height:30px;line-height:30px}
+.pagechoice_panel{background-color:#FFFFFF;height:50px;line-height:50px;}
+.panel_Coin{height:60px;width:60px}
+
+
+/* .title{position:relative;background-color:#4C4C4C;height:45px;line-height:45px;text-align:left;color:#FFFFFF} */
+.title{position:fixed;background-color:#4C4C4C;height:45px;line-height:45px;text-align:left;color:#FFFFFF;width:100%;top:0;left:0;z-index:1000;}
+.title_fixed_space{height:45px;}
+
+
+.Head_Panel{margin-top:20px;margin-bottom:20px}
+.Text_title{color:#FFFFFF;font-size:20px;text-align:center;}
+.CenterText_title{color:#000000;text-align:center;font-size:25px;}
+.CenterText_Smltitle{color:#000000;text-align:center;font-size:18px;}
+.CenterText_Natitle{color:#787878;text-align:center;font-size:15px;}
+.CenterText_Line{color:#000000;text-align:center;font-size:14px;margin-right:50px;margin-left:50px}
+.LeftText_Smltitle{color:#000000;text-align:left;font-size:18px;}
+
+.demo_line_01{height: 1px; background-color:#000000}
+.line{height: 1px; background-color:#000000}
+.linkLabel{font-size:18px}
+.btnpic{float:left}
+.item{margin-left:5px;margin-right:5px;margin-top:15px;background-color:#FFFFFF}
+.LabelImage{position: relative;top: 0px}
+.divLabel{height:40px;line-height:40px;font-size:18px;background-color:#FFFFFF}
+.LOGO{height:200px;width:200px}
+.DIVLOGO{margin: 0 auto; text-align: center; height:200px;width:200px}
+.mark{text-align:left;font-size:12px;color:#787878}
+
+.Content_Lage{color:#000000;text-align:left;font-size:25px;font-weight:bold}
+.Content_Small{color:#000000;text-align:left;font-size:18px;font-weight:normal}
+

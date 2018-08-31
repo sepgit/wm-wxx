@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+ol,
+ul,
+li {
+  list-style: none;
+}
+img {
+  border: 0 none;
+  vertical-align: middle;
+}
+button {
+  outline: 0 none;
+  border: 0 none;
+}
+input {
+  outline: none;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  max-width: 53.33333333rem;
+  min-width: 26.66666667rem;
+  margin: 0 auto;
+  background: #ccc;
+  height: 100%;
+}
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:after {
+  content: ",";
+  display: block;
+  visibility: hidden;
+  clear: both;
+  line-height: 0;
+  font-size: 0;
+  height: 0;
+}
+.expertList {
+  height: 14.66666667rem;
+  background: #fff;
+  margin-bottom: 1.66666667rem;
+}
+.expertList_left {
+  float: left;
+  width: 35%;
+}
+.expertList_left .expertList_logo {
+  height: 10rem;
+  line-height: 10rem;
+  text-align: center;
+}
+.expertList_left .expertList_logo img {
+  height: 7.5rem;
+  width: 7.5rem;
+}
+.expertList_right {
+  float: right;
+  width: 65%;
+}
+.expertList_right .expertList_compAlia {
+  height: 4.16666667rem;
+  line-height: 4.16666667rem;
+  padding-left: 1.33333333rem;
+  font-size: 2rem;
+}
+.expertList_right .expertList_advs {
+  padding: 0 0;
+}
+.expertList_right .expertList_advs li {
+  height: 2.08333333rem;
+  line-height: 2.08333333rem;
+  font-size: 1.66666667rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.expertList_right .expertList_to {
+  height: 3.75rem;
+  line-height: 3.75rem;
+  font-size: 2rem;
+}

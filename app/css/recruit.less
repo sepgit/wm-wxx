@@ -1,0 +1,141 @@
+*{margin: 0;padding: 0}
+a{text-decoration:none;}
+ol,ul,li{list-style: none;}
+img{border:0 none;vertical-align: middle;}
+button{outline: 0 none;border: 0 none;}
+input{outline: none}
+html{font-size:62.5%}
+//设置页面字体大小。@fz 就相当于 1px
+@fz:12rem;
+body{max-width:640/@fz;min-width:320/@fz;margin: 0 auto;background: #ccc;height: 100%;}
+.clearfix{*zoom:1;}
+.clearfix:after{content: ",";display: block;visibility: hidden;clear: both;line-height: 0;font-size: 0;height:0;}
+// 公用
+// 文字左右居中
+.text_cen{text-align: center;}
+.text_right{text-align: right;}
+.mar0{margin: 0 auto;}
+.titleback{height:52/@fz;}
+.erweima{width: 150/@fz;height: 150/@fz;position: absolute;top: 70/@fz;left: 10/@fz;
+    img{display: block;width: 100%;height: 100%;}
+}
+.re_input{height:48/@fz;line-height:48/@fz;border:1px solid #cccacb;background:#ebe9ea;font-size:26/@fz;border-radius:6/@fz;padding-left:5/@fz}
+// 招聘页面
+.re_body{background: #fff;padding-bottom:60/@fz}
+.r_titele{width:100%;height:60/@fz;line-height:60/@fz;background: #0b91f0;font-size:30/@fz;color:#fff}
+.r_titele_paddingRight{padding-left:60%;}
+.re_conditions{margin: 46/@fz auto;
+    li{height:50/@fz;line-height:50/@fz;margin:0 auto 26/@fz;font-size:26/@fz;
+        span{display: inline-block;width:30%}
+        input{height:48/@fz;line-height:48/@fz;border:1px solid #cccacb;background:#ebe9ea;font-size:26/@fz;border-radius:6/@fz;padding-left:5/@fz;width:65%;color:#333;
+           
+        }
+        select{height:48/@fz;line-height:48/@fz;border:1px solid #cccacb;background:#ebe9ea;font-size:26/@fz;border-radius:6/@fz;padding-left:5/@fz;width:65%;color:#333;
+            option{height:48/@fz;line-height:48/@fz;border:1px solid #cccacb;background:#ebe9ea;font-size:22/@fz;width:40%;color:#333;}
+        }
+    }
+}
+// 招聘列表页面
+.recruit_tit{position: relative;
+    .recruit_tit_search{width:60/@fz;height:60/@fz;position: absolute;top:0;right:0;font-size:40/@fz;color:#fff;line-height:60/@fz}
+}
+
+.re_lists_all{margin:20/@fz 0 0;background: #fff;
+    .re_compIcon{width:75/@fz;height:75/@fz;float: left;text-align: center;line-height:75/@fz;
+        img{width:75%;height: 75%;border: 0 none;}
+    }
+    .re_lists_ul{float: left;width:75%;
+        li{
+            div{float: left;height:50/@fz;line-height:50/@fz;width:65%;overflow:hidden;text-overflow:ellipsis;white-space: nowrap;font-size:18/@fz}
+            span{float: right;height:50/@fz;line-height:50/@fz;width:35%;text-align: right;overflow:hidden;text-overflow:ellipsis;font-size:18/@fz}
+            
+        }
+    }
+}
+
+// 公司详情页面
+.re_lists_title_tit{display:flex;justify-content: space-between;background:#fff;
+    span{height:40/@fz;width:33%;font-size:16/@fz;line-height:40/@fz;color:#000;text-align: center}
+    .current{background: #ccc;}
+}
+.re_lists_title{display:flex;justify-content: space-between;background:#0b91f0;
+    span{height:40/@fz;width:33%;font-size:16/@fz;line-height:40/@fz;color:#fff;text-align: center}
+}
+.re_lists{display:flex;justify-content: space-between;height:40/@fz;
+    span{height:40/@fz;width:33%;font-size:16/@fz;line-height:40/@fz;text-align: center}
+}
+.re_lists_paging{height:40/@fz;display:flex;justify-content: space-between;
+    span{height:40/@fz;width:33%;font-size:16/@fz;line-height:40/@fz;
+        &:nth-child(1){text-align: center}
+        &:nth-child(2){text-align: center}
+        &:nth-child(3){text-align: center;}
+    }
+}
+.re_lists {position: relative;z-index: 1000;
+    &:after{position: absolute;content: '';width:0;height:0;top:22%;right:0;z-index: 1100;border-style: solid;border-width:10/@fz;border-color:RGBA(153,153,102,0) RGBA(153,153,102,0) RGBA(153,153,102,0) RGBA(153,153,153,1);}
+}
+.re_listss{display:flex;justify-content: space-between;height:40/@fz;
+    span{height:40/@fz;width:33%;font-size:16/@fz;line-height:40/@fz;text-align: center}
+}
+.re_listss {position: relative;z-index: 1000;}
+.re_listss:nth-child(even) {background: #f3f3f3;}
+.re_listss:nth-child(odd) {background: #e6e6e6;}
+
+.re_lists:nth-child(even) {background: #f3f3f3;}
+.re_lists:nth-child(odd) {background: #e6e6e6;}
+
+.zj_re_lists{display:flex;justify-content: space-between;height:40/@fz;
+    span{height:40/@fz;width:33%;font-size:16/@fz;line-height:40/@fz;text-align: center}
+} 
+
+.zj_re_lists:nth-child(even) {background: #f3f3f3;}
+.zj_re_lists:nth-child(odd) {background: #e6e6e6;}
+
+.re_comp_detail{padding-bottom:50/@fz;background: #fff;}
+.re_comp_compname{height:150/@fz;background: #fff;
+    .bg{background: #0b91f0;height:60/@fz;}
+    .re_comp_logo{height:80/@fz;text-align: center;margin-top:-40/@fz;
+        img{width:80/@fz;height:80/@fz;}
+    }
+    .re_comp_name{line-height:40/@fz;font-size:20/@fz;}
+}
+
+.re_comp_tips{height:50/@fz;padding-left:50/@fz;line-height:50/@fz;position: relative;background: #fff;font-size:20/@fz}
+.re_comp_tips:after{content: '';width:25/@fz;height: 25/@fz;position: absolute;top:50%;left:0;background: #bc5e5e;margin:-12.5/@fz 0 0 12.5/@fz;}
+
+.re_comp_phon{height:50/@fz;line-height:50/@fz;padding-left:50/@fz;font-size:20/@fz;background: #fff;}
+.re_comp_msg{line-height:24/@fz;font-size:20/@fz;padding-left:50/@fz;background: #fff;}
+
+// 岗位详情
+.re_position_bg{background: #fff;padding-bottom:60/@fz}
+.re_position_name{font-size:20/@fz;
+    div{height:60/@fz;float: left;width:60%;line-height:60/@fz;padding-left:5%}
+    span{height:60/@fz;float: right;width:35%;line-height:60/@fz;color:#f8be57}
+}
+.re_position_comp{height:30/@fz;line-height: 30/@fz;font-size:16/@fz;padding-left:20/@fz}
+.re_position_msgs{padding-left:46/@fz;
+    li{
+        p{line-height:32/@fz;font-size: 16/@fz;padding-right: 30/@fz;}
+    }
+}
+
+// 职位选择
+.hiringCH{position: fixed;top: 52/@fz;left:0;right:0;bottom:0;background:#fff;padding-bottom:60/@fz;
+    .r_hiring_lists{margin: 0 auto;display: flex;flex-wrap: wrap;justify-content: space-between;
+        li{width:33%;padding:33%/2 0;position: relative;
+            div{width:60%;height:60%;position: absolute;top:50%;left:50%;margin:-40% 0 0 -30%;z-index:1000;
+                img{width:100%;height: 100%;border: 0 none}
+            }
+            p{width:60%;height:20%;position: absolute;top:50%;left:50%;margin:20% 0 0 -30%;text-align: center;font-size:20/@fz;z-index:1000;}
+            span{position: absolute;top: 0;left:0;width:100%;height: 100%;z-index:1100;}
+            &:nth-child(even) {background: #f3f3f3;}
+            &:nth-child(odd) {background: #e6e6e6;}
+        }
+    }
+}
+
+.re_search{background: #0b91f0;}
+
+.city_lists{
+    li{float: left;border:1px solid #333;border-radius:4/@fz;text-align: center;margin:10/@fz 2%;background: #e6e6e6;padding:10/@fz;font-size:14/@fz;line-height: 16/@fz;}
+}

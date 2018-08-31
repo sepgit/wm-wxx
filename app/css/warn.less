@@ -1,0 +1,47 @@
+*{margin: 0;padding: 0}
+a{text-decoration:none;}
+ol,ul,li{list-style: none;}
+img{border:0 none;vertical-align: middle;}
+button{outline: 0 none;border: 0 none;}
+input{outline: none}
+html{font-size:62.5%}
+//设置页面字体大小。@fz 就相当于 1px
+@fz:12rem;fz
+body{max-width:640/@fz;min-width:320/@fz;margin: 0 auto;background: #ccc;height: 100%;}
+.clearfix{*zoom:1;}
+.clearfix:after{content: ",";display: block;visibility: hidden;clear: both;line-height: 0;font-size: 0;height:0;}
+// 公用
+
+.warn-tit{background: #fff;text-align: center;height:60/@fz;line-height:60/@fz;font-size:30/@fz;border-bottom:1px solid #666}
+
+.warnMsg{border-width: 1px 0;border-style:solid;border-color:#666;margin-top:15/@fz;background: #fff;padding: 0 20/@fz;padding-bottom: 10/@fz;position: relative;
+    ul{padding-top: 20/@fz;
+        li{ margin:0  0 10/@fz;
+            
+            div{float: left;width:35%;text-align: right;font-size:18/@fz;}
+            span{float: right;width:60%;font-size:18/@fz}
+           
+        }
+    }
+    .warn_source{border-top:1px solid #666;padding-top: 10/@fz;
+        div{float: left;width:35%;text-align: right;font-size:18/@fz;}
+        span{float: right;width:60%;font-size:18/@fz}
+    }
+    .mengban{width:100%;height: 100%;position: absolute;top: 0;left: 0;z-index: 1000;}
+}
+.warnReason{overflow: hidden;white-space: nowrap; text-overflow: ellipsis;}
+
+.warn_line{height:60/@fz;}
+.warn_compDetail{padding:15/@fz 20/@fz 40/@fz;border-width: 1px 0;border-style:solid;border-color:#666;background: #fff;
+    .warn_detail_comp{line-height:26/@fz;border-bottom:1px solid #666;font-size:24/@fz;text-align: center;}
+    .warn_detail_re{height:40/@fz;line-height: 40/@fz;text-align: center;font-size:24/@fz;}
+    .warn_detail_reason{line-height:24/@fz;padding:10/@fz 0;text-indent: 2em;font-size:20/@fz}
+}
+
+.warn_paging{display: flex;justify-content: space-between;position: fixed;bottom:0;left:0;width:100%;background: #f2f1f1;border-top:1px solid #666;z-index: 10000;
+    li{width:32%;height:40/@fz;line-height:40/@fz;text-align: center;
+        &:nth-child(2){border-width: 0 1px;border-style:solid;border-color:#666;}
+    }
+}
+
+#warn_statement{padding:20/@fz 30/@fz 80/@fz;line-height:24/@fz;font-size:20/@fz;text-align: center;}
