@@ -11,6 +11,8 @@ import AdvantageNew from './advantagenew/advantageNew.js';
 import Recruit from './recruit/recruit.js';
 import Warn from './warn/warn.js';
 import Recommend from './recommend/recommend.js';
+import Silders from './sildes/silders.js';
+import Exhibition from './exhibition/exhibition.js'
 import {Getwxtoken,getCheckbind} from './DataInterface.js';
 
 class Index extends Component {
@@ -102,7 +104,7 @@ class Index extends Component {
         {
           this.state.page=='advantagenew'?
             <AdvantageNew />:undefined
-        } 
+        }
         {
           this.state.page=='recruit'?
             < Recruit />:undefined
@@ -114,6 +116,14 @@ class Index extends Component {
         {
           this.state.page=='recommend'?
             < Recommend />:undefined
+        }
+        {
+          this.state.page=='silde'?
+          < Silders />:undefined
+        }
+        {
+          this.state.page=='exhibition'?
+          < Exhibition />:undefined
         }
       </div>
     );

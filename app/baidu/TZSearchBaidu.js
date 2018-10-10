@@ -71,7 +71,7 @@ class TZSearchBaidu extends Component {
       winRepl:0,
       allRepl:0,
       scors:[],
-      baiduvip:0,
+      baiduvip:1,
       Pagestatus:'Main',    //Main主界面
     }
   }
@@ -110,7 +110,7 @@ class TZSearchBaidu extends Component {
       })
     } else {
       this.setState({
-        baiduvip:0
+        baiduvip:1
       })
     }
   }

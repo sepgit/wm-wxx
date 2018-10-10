@@ -1,0 +1,74 @@
+html {
+  font-size: 62.5%;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+ol,
+ul,
+li {
+  list-style: none;
+}
+img {
+  border: 0 none;
+  vertical-align: middle;
+}
+button {
+  outline: 0 none;
+  border: 0 none;
+}
+.exTit {
+  height: 4.16666667rem;
+  width: 100%;
+  line-height: 4.16666667rem;
+  border-width: 1px 0;
+  border-style: solid;
+  border-color: #797979;
+  background: #fff;
+  text-align: center;
+  position: relative;
+  font-size: 1.66666667rem;
+  margin-bottom: 2.5rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+.exhibition .hed {
+  height: 5rem;
+}
+.exhibition .btnLists {
+  margin: 1.66666667rem 0 0;
+}
+.exhibition .btnLists li {
+  height: 5rem;
+  width: 29.16666667rem;
+  margin: 0 auto 2.5rem;
+  line-height: 5rem;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  font-size: 1.66666667rem;
+  color: #fff;
+}
+.exhibition .btnLists .cab {
+  background: #0cc;
+}
+.exhibition .btnLists .server {
+  background: #09c;
+}
+.exhibition .btnLists .ticket {
+  background: #25d825;
+}
+.exhibition .msgLists {
+  width: 29.16666667rem;
+  margin: 0 auto 2.5rem;
+}
+.exhibition .msgLists li {
+  line-height: 2.16666667rem;
+  font-size: 1.33333333rem;
+}

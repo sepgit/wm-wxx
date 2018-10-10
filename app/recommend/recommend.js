@@ -8,7 +8,7 @@ import HTTPED from '../address';
 import StrInput from '../component/StrInput.js';
 import BackTitle from '../component/BackTitle.js';
 import Title from '../component/Title.js';
-import BackT from '../advantagenew/backT.js'
+import BackT from '../advantagenew/backT.js';
 import { getDataList, getCheckbind, Getwxtoken, getUserInfo, postProv, postData, postYJData, getDataDetail, getDataListRe } from '../DataInterface.js';
 class Recommend extends Component {
   constructor(props) {
@@ -115,8 +115,6 @@ class Recommend extends Component {
   todetail(e) {
     let experts = e.target.getAttribute('num');
     let comp = e.target.getAttribute('comp');
-    
-    // console.log(comp);
     let user = e.target.getAttribute('user');
     this.setState({
       userID:user
@@ -352,7 +350,7 @@ class Recommend extends Component {
                 <div className="r_titele r_titele_paddingRight">专家推荐</div>
                 <div className="re_comp_compname">
                     <div className="erweima"><img src={logo} alt="logo"/></div>
-                    {/* <div className="re_comp_logo"><img src={this.state.logo} alt="logo"/></div> */}
+
                     <div className="re_comp_name r_titele_paddingRight">{this.state.expertsDetail.name}</div>
                     <div className="re_comp_name r_titele_paddingRight">{this.state.compDetail.compName}</div>
                 </div>
@@ -509,7 +507,7 @@ class Recommend extends Component {
                 <div className="re_comp_tips">公司简介</div>
                 <div className="re_comp_msg">{this.state.compDetail.information}</div>
                 <div className="re_comp_tips">联系方式</div>
-                <div className="re_comp_phon">{this.state.compDetail.retelno}</div>
+                <div className="re_comp_phon">{this.state.expertsDetail.mobi}</div>
                 <div className="re_comp_tips">邮箱</div>
                 <div className="re_comp_phon">{this.state.compDetail.reEmail}</div>
                 <div className="re_comp_tips">公司地址</div>

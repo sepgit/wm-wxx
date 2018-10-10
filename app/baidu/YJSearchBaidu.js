@@ -94,7 +94,7 @@ class YJSearchBaidu extends Component {
       winRepl:0,
       allRepl:0,
       scors:[],
-      baiduvip:0,
+      baiduvip:1,
       Pagestatus:'Main',
     }
   }
@@ -132,7 +132,7 @@ class YJSearchBaidu extends Component {
       })
     } else {
       this.setState({
-        baiduvip:0
+        baiduvip:1
       })
     }
   }
