@@ -70,5 +70,48 @@ button {
 }
 .exhibition .msgLists li {
   line-height: 2.16666667rem;
-  font-size: 1.33333333rem;
+  font-size: 1.5rem;
+}
+.cabMain .cabSearch {
+  height: 3.33333333rem;
+  background: #fff;
+}
+.cabMain .cabSearch .searchBtn {
+  height: 3.33333333rem;
+  width: 8.33333333rem;
+  margin: 0 auto;
+  display: block;
+  color: #0cc;
+  font-size: 1.66666667rem;
+  padding-top: 0.83333333rem;
+  text-align: center;
+}
+.cabMain .cabLists {
+  padding-top: 0.83333333rem;
+}
+.cabMain .cabLists .cabListLi {
+  padding-bottom: 0.83333333rem;
+  width: 26.66666667rem;
+  margin: 0 auto 2.5rem;
+  background: #fff;
+}
+.cabMain .cabLists .cabListLi dl .cabListLi-msg {
+  height: 2.5rem;
+  line-height: 2.5rem;
+  padding: 0 5%;
+}
+.cabMain .cabLists .cabListLi dl .cabListLi-msg .tC {
+  text-align: center;
+}
+.cabMain .cabLists .cabListLi dl .cabListLi-msg .msg-p-all {
+  text-align: center;
+}
+.cabMain .cabLists .cabListLi .todetail {
+  padding: 0 5%;
+  margin-top: 0.83333333rem;
+}
+.cabMain .cabLists .cabListLi .todetail div {
+  height: 2.5rem;
+  line-height: 2.5rem;
+  font-size: 1.5rem;
 }

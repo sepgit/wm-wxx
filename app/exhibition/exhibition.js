@@ -6,6 +6,9 @@ import Textline from  '../component/Textline.js';
 import HTTPED from '../address';
 import { getDataList, getCheckbind, Getwxtoken, getUserInfo, postProv, postData, postYJData, getDataDetail, getDataListRe } from '../DataInterface.js';
 import BackT from '../advantagenew/backT.js';
+import CabLists from './cabLists.js';
+import ServerList from './serverList.js';
+import TicketList from './ticketList.js'
 class Exhibition extends Component {
   constructor(props) {
     super(props);
@@ -13,16 +16,17 @@ class Exhibition extends Component {
     this.cabPage = this.cabPage.bind(this);
     this.serverPage = this.serverPage.bind(this);
     this.ticketPage = this.ticketPage.bind(this);
+    this.backMain = this.backMain.bind(this);
     this.state = {
       wxtoken:'',
       BinduserName:'',
       user:'',
       comp:'',
-      mainShow:true,
+      mainShow:false,
       //三个按钮显示的页面
       cabShow:false,
       serverShow:false,
-      ticketShow:false,
+      ticketShow:true,
     }
   }
 
@@ -68,6 +72,14 @@ class Exhibition extends Component {
       ticketShow:true
     })
   }
+  backMain() {
+    this.setState({
+      mainShow:true,
+      cabShow:false,
+      serverShow:false,
+      ticketShow:false
+    })
+  }
   render() {
     let srcs = HTTPED + 'images/nlogo.png';
     return (
@@ -83,29 +95,32 @@ class Exhibition extends Component {
               <li className="ticket" onClick={this.ticketPage}>卡卷</li>
           </ul>
           <ul className="msgLists">
-              <li>1.</li>
-              <li>2.</li>
-              <li>3.</li>
+              <li>1.舱位展示内容为现成舱位，即买即得。</li>
+              <li>2.服务展示内容为现成服务，即买即得。</li>
+              <li>3.卡卷展示内容为优质供应商发放的优惠券，可在与该供应商合作时使用。</li>
+              <li>4.<span style={{color:"red"}}>请绑定物贸帮帮帐号后</span>，再购买或领取</li>
           </ul>
         </div>:undefined
       }
       {
         this.state.cabShow?
-        <div>
-          cab
-        </div>:undefined
+        <CabLists 
+          backMain = {this.backMain}
+        ></CabLists>:undefined
       }
       {
         this.state.serverShow?
-        <div>
-          server
-        </div>:undefined
+        <ServerList
+          backMain = {this.backMain}
+        ></ServerList>
+        :undefined
       }
       {
         this.state.ticketShow?
-        <div>
-          ticket
-        </div>:undefined
+        <TicketList
+          backMain = {this.backMain}
+        ></TicketList>
+        :undefined
       }
       </div>
     )
